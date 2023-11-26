@@ -8,5 +8,8 @@
 </head>
 <body>
     <h1>Hi I am Contact Page</h1>
+    <a href="">About</a>
+    <a href="">Home</a>
+    <a href="">Contact</a>
 </body>
 </html>
