@@ -8,7 +8,7 @@ class MyController extends Controller
 {
 
    public function MyName($NameVlaue){
-          return $NameVlaue
+          return $NameVlaue;
    }
 
 

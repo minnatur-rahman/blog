@@ -16,4 +16,4 @@ use Illuminate\Support\Facades\Route;
 */
 
 
-Route::get('/name/{NameValue}', [MyController::class, 'MyName']);
+Route::get('/', [MyController::class, 'MyName' ]);
