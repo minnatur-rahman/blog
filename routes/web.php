@@ -15,13 +15,5 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', [WebPageController::class, 'index']);
 
-
-Route::get('/about', [WebPageController::class, 'about']);
-
-
-Route::get('/contact', [WebPageController::class, 'contact']);
-
-
-Route::get('/shajid', [WebPageController::class, 'shajid']);
+Route::get('/name/{NameValue}', [MyController::class, 'MyName']);
