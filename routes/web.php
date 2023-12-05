@@ -10,14 +10,8 @@ Route::get('/', function(){
     return view('index');
 });
 
-Route::get('/post', function(){
-    return view('post');
+Route::get('/post/{id}', function(string $id){
+    return "<h1>Hi I am New Id : " .$id.  " </h1>";
 
 });
 
-// Route::view('maine', '/puth');
-
-Route::get('/post/firstpost', function(){
-    return view('minnatur');
-
-});
