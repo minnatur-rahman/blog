@@ -10,12 +10,12 @@ Route::get('/', function(){
     return view('index');
 });
 
-Route::get('/post/{id}', function (string $id){
+Route::get('/post/{id}/commend/{commend}', function (string $id, string $commend){
     if($id){
-        return "<h1>Hi I am New Id : " .$id.  " </h1>";
+        return "<h1>Hi I am New Id : " .$id.  "& commend : $commend </h1>";
     }else{
         return "<h1>No Id Found</h1>";
     }
 
-})->whereIn('id', ['Movie', 'song', 'painting']);
+})->where('id', '[0-9]+')->whereAlpha('commend', );
 
