@@ -7,6 +7,10 @@
     <title>Document</title>
 </head>
 <body>
-    <H1>I am Bangladeshi</H1>
+    <H1>I am About page</H1>
+
+    <a href="index">Index</a>
+
+    <a href="post">Post</a>
 </body>
 </html>

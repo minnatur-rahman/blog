@@ -1,1 +1,5 @@
-<h1>I am maine page</h1>
+<h1>I am Index page</h1>
+
+<a href="index">Index</a>
+
+<a href="about">About</a>
