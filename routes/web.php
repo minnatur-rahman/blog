@@ -10,13 +10,13 @@ Route::get('/', function(){
    return view('master');
 });
 
-// Route::get('/', function(){
-//     return view('master');
-//  });
+Route::get('/about', function(){
+    return view('about');
+ });
 
-//  Route::get('/', function(){
-//     return view('master');
-//  });
+ Route::get('/post', function(){
+    return view('post');
+ });
 
 
 
