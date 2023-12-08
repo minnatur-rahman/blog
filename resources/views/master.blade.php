@@ -32,7 +32,9 @@
          <li style="color: blue">{{$n}}</li>
 
 
-    @elseg(ghgg)
+    @elseif($loop->last)
+        <li style="color: rgb(0, 255, 221)">{{$n}}</li>
+    @else
         <li>{{$n}}</li>
     @endif
 
