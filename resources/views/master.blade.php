@@ -14,4 +14,8 @@
 
 {!!'<h1>Hello World</h1>'!!}
 
+<br><br>
+
+{{"<script>alert('Minnatur')</script>"}}
+
 
