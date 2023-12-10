@@ -18,6 +18,11 @@ Route::get('/about', function(){
     return view('post');
  });
 
+ Route::get('/test', function(){
+    return view('test');
+ });
+
+
 
 
 
