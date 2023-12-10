@@ -46,19 +46,23 @@
             <div class="col-9">
                 <article>
                     @hasSection('content')
-
+                    @yield('content')
+                    @else
+                    <h2>No Content Found</h2>
                     @endif
-                    @yield('content', '<h2>No Content Found</h2>')
+
                  </article>
              </div>
 
              <div class="col-3">
                 <aside>
-                    <ul class="bg-danger">
+                    @section('sidebar')
+                    <ul>
                         <li><a href="/"></a>Home</li>
                         <li><a href="/about"></a>About</li>
                         <li><a href="/post"></a>Post</li>
                     </ul>
+                    @show
                  </aside>
              </div>
 
