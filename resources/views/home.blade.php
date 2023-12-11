@@ -9,3 +9,26 @@
 @section('title')
     Home
 @endsection
+
+@push('scripts')
+    <script src="/example.js"></script>
+    <script src="/ample.js"></script>
+    <script src="/ple.js"></script>
+@endpush
+
+@push('scripts')
+    <script src="/students.js"></script>
+
+@endpush
+
+
+@push('style')
+    <link rel="stylesheet" href="bootstrap.css">
+@endpush
+
+@prepend('style')
+    <style class="bg-danger">
+
+    </style>
+@endprepend
+
