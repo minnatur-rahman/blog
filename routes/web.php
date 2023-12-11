@@ -7,20 +7,14 @@ use Illuminate\Support\Facades\Route;
 
 
 Route::get('/', function(){
-   return view('home');
+   return view('welcome');
 });
 
-Route::get('/about', function(){
-    return view('about');
+Route::get('/users', function(){
+    return view('users', ['user' => "Minnatur Rahman"]);
  });
 
- Route::get('/post', function(){
-    return view('post');
- });
 
- Route::get('/test', function(){
-    return view('test');
- });
 
 
 
