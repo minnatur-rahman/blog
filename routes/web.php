@@ -10,8 +10,22 @@ Route::get('/', function(){
    return view('welcome');
 });
 
-Route::get('/users', function(){
-    return view('users', ['user' => "Minnatur Rahman"]);
+Route::get('/pon', function(){
+    $name = 'Minnatur Rahmen';
+    // return view('users', [
+    //     'user' => $name,
+    //     'city' => 'Dhaka'
+    // ]);
+
+//    return view('users')
+//    ->with('user', $name)
+//    ->with('city', 'Dhaka');
+
+     return view('users')
+     ->withUser($name)
+     ->withCity('Dhaka');
+
+
  });
 
 
