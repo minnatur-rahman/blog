@@ -24,7 +24,7 @@ Route::get('/pon', function(){
 
 
     return view('users', [
-        'user' => $name,
+        'user' => $names,
         'city' => 'Dhaka'
     ]);
 
