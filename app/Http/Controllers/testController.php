@@ -11,8 +11,13 @@ class testController extends Controller
     }
 
     public function showUser(string $id){
-        return view('user', ['id' => $id]);
+        return view('user', compact('id'));
     }
+
+    public function showblog(){
+        return view('blog');
+    }
+
 
 
 }
