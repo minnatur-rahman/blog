@@ -1,2 +1,1 @@
-
-<h1>welcome pages</h1>
+<h1>Home page</h1>
