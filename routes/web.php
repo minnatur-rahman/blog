@@ -11,7 +11,7 @@ use App\Http\Controllers\testController;
 // });
 
 Route::get('/', [testController::class, 'showHome'])->name('home');
-Route::get('/user', [testController::class, 'showUser'])->name('users');
+Route::get('/user/{id}', [testController::class, 'showUser'])->name('users');
 
 
 
