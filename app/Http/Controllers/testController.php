@@ -6,18 +6,11 @@ use Illuminate\Http\Request;
 
 class testController extends Controller
 {
-    public function showHome(){
-        return view('welcome');
+    /**
+     * Handle the incoming request.
+     */
+    public function __invoke()
+    {
+        return view('test');
     }
-
-    public function showUser(string $id){
-        return view('user', compact('id'));
-    }
-
-    public function showblog(){
-        return view('blog');
-    }
-
-
-
 }

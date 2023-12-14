@@ -10,13 +10,13 @@ use App\Http\Controllers\testController;
 //     return view('welcome');
 // });
 
-Route::controller(testController::class)->group(function(){
+// Route::controller(testController::class)->group(function(){
 
-    Route::get('/', 'showHome')->name('home');
-    Route::get('/blog', 'showBlog')->name('blog');
-    Route::get('/user/{id}', 'showUser')->name('users');
+//     Route::get('/', 'showHome')->name('home');
+//     Route::get('/blog', 'showBlog')->name('blog');
+//     Route::get('/user/{id}', 'showUser')->name('users');
 
-});
+// });
 
 
 Route::get('/test', testController::class);
